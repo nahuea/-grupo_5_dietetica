@@ -23,10 +23,21 @@ body{
 
 }
 
-.form-register h4{
+.form-login h4{
     font-size: 22px;
     margin-bottom: 20px;
 
+}
+
+.form-login .boton{
+    width: 100%;
+    background: blue;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0px;
+    font-size: 16px;
+    
 }
 
 .control{
