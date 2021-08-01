@@ -1,5 +1,5 @@
 body {
-    font-family: arial, calibri;
+    font-family: calibri, arial;
 }
 
 .header {
@@ -79,7 +79,6 @@ nav a {
     background-color: rgba(16, 172, 132, 0.32);
     text-align: center;
     border-radius: 4px;
-    
 }
 
 .articulos {
@@ -104,7 +103,6 @@ nav a {
 
 footer{
     width: 100vw;
-    height: 125px;
     background-color: #10AC84;
     color: black;
 }
@@ -113,22 +111,21 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 50px 20px;
 }
 
-.box__footer{
+.container_footer div{
     display: flex;
     flex-direction: column;
-
 }
 
 
 .box__footer a{
-    margin-top: 10px;
+    margin-top: 20px;
     color: black;
     font-weight: 600;
 }
 
 .box__footer a:hover{
     opacity: 0.8;
-
 }
