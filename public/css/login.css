@@ -10,6 +10,38 @@ body{
 
 }
 
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 106px;
+    width: 100vw;
+    background-color: #10AC84;
+}
+
+.fab {
+    width: 40px;
+    height: 40px;
+    font-size: 2em;
+    color: white;
+}
+
+input{
+    width: 340px;
+    height: 32px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.fas{
+    font-size: 2em;
+    color: white;
+}
+
+nav a {
+    color: white;
+}
+
 .form-login{
     width: 400px;
     background: darkgreen;
@@ -52,35 +84,28 @@ body{
 }
 
 footer{
-    width: 100%;
-    padding: 50px 0px;
+    width: 100vw;
+    height: 125px;
+    background-color: #10AC84;
+    color: black;
 }
 
 .container_footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 100px;
-
 }
 
 .box__footer{
     display: flex;
     flex-direction: column;
-    padding: 40px;
 
 }
 
-.box__footer.logo img{
-    width: 100px;
-
-}
 
 .box__footer a{
     margin-top: 10px;
-    color: orange;
+    color: black;
     font-weight: 600;
 }
 
