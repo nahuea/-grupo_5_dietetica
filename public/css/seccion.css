@@ -1,3 +1,7 @@
+body {
+    font-family: arial, calibri;
+}
+
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -26,7 +30,7 @@ input{
     color: white;
 }
 
-.nav a {
+nav a {
     color: white;
 }
 
@@ -39,8 +43,10 @@ input{
 .categorias div{
     width: 140px;
     height: 30px;
-    background-color: #10AC84;
+    background-color: rgba(16, 172, 132, 0.32);
     text-align: center;
+    border-radius: 4px;
+    
 }
 
 .articulos {
@@ -85,7 +91,7 @@ footer{
 
 .box__footer a{
     margin-top: 10px;
-    color: orange;
+    color: black;
     font-weight: 600;
 }
 
