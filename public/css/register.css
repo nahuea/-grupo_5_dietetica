@@ -10,6 +10,53 @@ body{
 
 }
 
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 106px;
+    width: 100vw;
+    background-color: #10AC84;
+}
+
+.logo{
+    width: 240px;
+    height: 40px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 83px;
+    display: flex;
+    justify-content: center;
+}
+
+.carrito{
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 17px;
+    padding-right: 33px;
+}
+
+.ingreso{
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 33px;
+    padding-right: 121px;
+}
+
+.barra{
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 10px;
+    padding-right: 17px;
+}
+
+.fab {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+
 .form-register{
     width: 400px;
     background: darkgreen;
@@ -52,35 +99,28 @@ body{
 }
 
 footer{
-    width: 100%;
-    padding: 50px 0px;
+    width: 100vw;
+    height: 125px;
+    background-color: #10AC84;
+    color: black;
 }
 
 .container_footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 100px;
-
 }
 
 .box__footer{
     display: flex;
     flex-direction: column;
-    padding: 40px;
 
 }
 
-.box__footer.logo img{
-    width: 100px;
-
-}
 
 .box__footer a{
     margin-top: 10px;
-    color: orange;
+    color: black;
     font-weight: 600;
 }
 
