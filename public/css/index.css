@@ -4,9 +4,67 @@
     padding:0;
     box-sizing: border-box;
 }
-
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
 /*//////////-HEADER-//////////*/
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 60px;
+    width: 100vw;
+    background-color: #10AC84;
+}
+
+.marca{
+    display: flex;
+    flex-wrap: wrap;
+    text-orientation: column;
+    width: 160px;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 15px;
+    margin-left: 25px;
+}
+
+.marca h3{
+    margin:auto;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    margin:auto;
+}
+
+.barra{
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 10px;
+    padding-right: 17px;
+}
+
+.carrito{
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 17px;
+    padding-right: 33px;
+}
+
+.ingreso{
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 33px;
+    padding-right: 121px;
+}
+
+input{
+    width: 340px;
+    height: 32px;
+}
+
 
 
 
