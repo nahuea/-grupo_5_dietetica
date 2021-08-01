@@ -14,19 +14,30 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 106px;
+    height: 110px;
     width: 100vw;
     background-color: #10AC84;
 }
 
-.logo{
-    width: 240px;
-    height: 40px;
-    padding-top: 36px;
-    padding-bottom: 36px;
-    padding-left: 83px;
+.marca{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    text-orientation: column;
+    width: 160px;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 15px;
+    margin-left: 25px;
+}
+
+.marca h3{
+    margin:auto;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    margin:auto;
 }
 
 .carrito{
@@ -50,10 +61,18 @@ body{
     padding-right: 17px;
 }
 
-.fab {
-    font-size: 3em;
+input{
+    width: 340px;
+    height: 32px;
+}
+
+.fas{
+    font-size: 2em;
     color: white;
-    text-align: center;
+}
+
+nav a {
+    color: white;
 }
 
 
