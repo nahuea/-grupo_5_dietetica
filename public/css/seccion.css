@@ -1,0 +1,98 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 106px;
+    width: 100vw;
+}
+
+.fab {
+    width: 40px;
+    height: 40px;
+    font-size: 2em;
+}
+
+input{
+    width: 340px;
+    height: 32px;
+    background-color: #10AC84;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.fas{
+    font-size: 2em;
+    color: #10AC84;
+}
+
+.nav a {
+    color: #10AC84;
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-between;
+    margin:23px 112px 58px;
+}
+
+.categorias div{
+    width: 140px;
+    height: 30px;
+    background-color: #10AC84;
+    text-align: center;
+}
+
+.articulos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.producto{
+    width: 140px;
+    height: 200px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.producto img{
+    width: 134px;
+    height: 134px;
+}
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+}
+
+.box__footer.logo img{
+    width: 100px;
+
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: orange;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+
+}
