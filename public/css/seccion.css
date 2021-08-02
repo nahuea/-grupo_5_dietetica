@@ -12,57 +12,44 @@ body {
 
 /*//////////-HEADER-//////////*/
 
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 60px;
-    width: 360px;
+header {
     background-color: #10AC84;
+    height: 60px;
+    padding: 10px 15px;
 }
 
-.header div{
-    padding: 15px 10px;
-}
-
-.logo{
-    width: 40px;
-    height: 40px;
+.navbar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.carrito{
-    width: 23px;
-    height: 23px;
+.marca {
+    width: 45px;
+}
+
+.carrito i {
     display: none;
-    padding: 15px 10px;
 }
 
-.burger-menu{
-    width: 23px;
-    height: 23px;
-    padding: 15px 10px;
-}
-
-.ingreso{
-    width: 23px;
-    height: 23px;
-    padding: 15px 10px;
-}
-
-input{
-    width: 185px;
+.barra input {
+    border: none;
+    border-radius: 20px;
     height: 25px;
-    border-radius: 8px;
+    text-align: center;
 }
 
-.fas{
-    font-size: 1em;
+.user h4 {
+ display: none;
+ text-decoration: none;
+}
+
+.burger-menu i{
     color: white;
+    size: 2x
 }
 
-nav a{
+.user i{
     color: white;
 }
 
