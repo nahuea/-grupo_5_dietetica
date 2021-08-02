@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/seccion.css">
+    <link rel="stylesheet" href="/css/register.css">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,7 @@
     <title>Dietética Tafi</title>
 </head>
 <body>
+
     <header>
         <nav class="navbar">
             <div class="marca">
@@ -32,20 +33,17 @@
             </div>
         </nav>
     </header>
-    
-    <body>
 
-        
-        
-        
+
+    <main>
+        <section class="form-register">
         <form action="registro" method="POST">
-            <section class="form-register">
+            
             <h4>Formulario Registro</h4>
             <label for="usuario">nombre de usuario</label>
             <input class="control" type="text" name="nombre de usuario" id="usuario" placeholder="ej:HE-MAN83">
             </div>
 
-            
 
             <div>
             <label for="direccion">mail</label>
@@ -63,12 +61,16 @@
             <input class="control" type="password" name="confirmar contraseña">
             </div>
             <button class="boton" type="submit">Registrarse</button>
-            
-            </section>
-            
            
         </form>
-        <footer>
+    </section>
+
+    </main>
+        
+
+
+    <footer>
+
             <div class="container_footer">
                 <div id='redes'>
                     <a href="#"><img src="img/Facebook.png" class='redes'></a>
@@ -87,15 +89,19 @@
                     <p><a href="#">Preguntas freq.</a></p>
                     <p><a href="#">Políticas de priv.</a></p>
                 </div>
+                
                 <div class="usuario">
+                    <p class="sub">Usuario</p>
                     <p><a href="#">Mi cuenta</a></p>
-                    <p><a href="/register">Registrarme</a></p>
+                    <p><a href="/register.html">Registrarme</a></p>
                     <p><a href="#">Productos fav.</a></p>
                 </div>
                  <div class="logo-footer">
                     <img src="img/logo.svg" alt="logo" class="logo">
                 </div>
             </div> 
+
         </footer>
+
     </body>
 </html>

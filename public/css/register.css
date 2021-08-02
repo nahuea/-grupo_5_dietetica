@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: lightgrey;
 }
 
 /*//////////-HEADER-//////////*/
@@ -16,6 +17,7 @@ header {
     background-color: #10AC84;
     height: 60px;
     padding: 10px 15px;
+    box-shadow: 7px 13px 37px 000;
 }
 
 .navbar {
@@ -54,12 +56,11 @@ header {
 }
 
 .form-register{
-    max-width: 1100px;
+    max-width: 1200px;
     background: white;
     padding: 24px;
     margin: auto;
     margin-top: 100px;
-    border-radius: 4px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: black;
     box-shadow: 7px 13px 37px 000;
@@ -101,6 +102,17 @@ footer {
     width: 100%;
     background-color: #10AC84;
     color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 7px 13px 37px 000;
+    vertical-align: middle;
 
 }
 
@@ -111,15 +123,7 @@ footer {
 }
 
 footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
+    
 }
 
 .sub{
@@ -207,11 +211,16 @@ footer{
         max-width:102px ;
     }
 
+    .usuario {
+        display: block;
+        margin-bottom: 15px;
+    }
+
 }
 
 @media ( min-width: 1200px) {
 
-    header {
+    body header {
         max-width: 1200px;
         margin:auto;
     }
@@ -236,6 +245,18 @@ footer{
     .form-register{
         display: flex;
         margin: auto;
+    }
+
+
+    .container_footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        vertical-align: middle;
+    }
+
+    .logo-footer {
+        width: 80%;
     }
 
 
