@@ -66,6 +66,13 @@ header {
 
 /*//////////-MAIN-//////////*/
 
+main {
+    text-align: center; 
+    display: block;
+    width: 100%;
+    background-color: #fff;
+}
+
 #categorias{
     display: flex;
     justify-content: space-between;
@@ -256,8 +263,7 @@ footer{
     }
 
     header {
-        max-width: 1200px;
-        margin:auto;
+        max-width: 1255px;
     }
 
     .navbar{
@@ -272,7 +278,7 @@ footer{
     }
 
     footer {
-        max-width: 1200px;
+        max-width: 1255px;
         margin: auto;
         
     }
@@ -286,7 +292,7 @@ footer{
     }
 
     main {
-        max-width: 1200px;
+        max-width: 1255px;
         margin: auto;
     }
     
