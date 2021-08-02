@@ -1,84 +1,81 @@
+/*//////////-GENERAL-//////////*/
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*//////////-HEADER-//////////*/
+
 .header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 110px;
-    width: 100vw;
+    height: 60px;
+    width: 360px;
     background-color: #10AC84;
 }
 
-.marca{
-    display: flex;
-    flex-wrap: wrap;
-    text-orientation: column;
-    width: 160px;
-    text-align: center;
-    padding-left: 60px;
-    padding-right: 15px;
-    margin-left: 25px;
-}
-
-.marca h3{
-    margin:auto;
+.header div{
+    padding: 15px 10px;
 }
 
 .logo{
-    width: 70px;
-    height: 70px;
-    margin:auto;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
 }
 
 .carrito{
-    padding-top: 36px;
-    padding-bottom: 36px;
-    padding-left: 17px;
-    padding-right: 33px;
+    width: 23px;
+    height: 23px;
+    display: none;
+    padding: 15px 10px;
+}
+
+.burger-menu{
+    width: 23px;
+    height: 23px;
+    padding: 15px 10px;
 }
 
 .ingreso{
-    padding-top: 36px;
-    padding-bottom: 36px;
-    padding-left: 33px;
-    padding-right: 121px;
-}
-
-.barra{
-    padding-top: 36px;
-    padding-bottom: 36px;
-    padding-left: 10px;
-    padding-right: 17px;
+    width: 23px;
+    height: 23px;
+    padding: 15px 10px;
 }
 
 input{
-    width: 340px;
-    height: 32px;
+    width: 185px;
+    height: 25px;
+    border-radius: 8px;
 }
 
 .fas{
-    font-size: 2em;
+    font-size: 1em;
     color: white;
 }
 
-nav a {
+nav a{
     color: white;
 }
 
 
 .form-register{
     width: 400px;
-    background: darkgreen;
+    background: white;
     padding: 30px;
     margin: auto;
     margin-top: 100px;
     border-radius: 4px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+    color: black;
     box-shadow: 7px 13px 37px 000;
 
 }
@@ -86,6 +83,7 @@ nav a {
 .form-register h4{
     font-size: 22px;
     margin-bottom: 20px;
+    align-items: center;
 
 }
 
@@ -113,32 +111,59 @@ nav a {
 
 footer{
     width: 100vw;
-    height: 125px;
     background-color: #10AC84;
-    color: black;
-    margin-top: 100px;
+    color: white;
+}
+
+.redes{
+    height: 35px;
+    width: 35px;
+    background-color: #10AC84;
 }
 
 .container_footer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.sub{
+    font-weight: 600;
+    font-size: 11px;
 }
 
 .box__footer{
-    display: flex;
-    flex-direction: column;
-
+    padding: 10px;
 }
 
-
 .box__footer a{
-    margin-top: 10px;
-    color: black;
-    font-weight: 600;
+    color: white;
+    font-size: 11px;
+}
+
+.usuario{
+    display: none;
+}
+
+.usuario a{
+    color: white;
+    font-size: 11px;
 }
 
 .box__footer a:hover{
     opacity: 0.8;
+}
 
+.usuario a:hover{
+    opacity: 0.8;
+}
+
+.logo-footer {
+    display: none;
 }

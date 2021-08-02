@@ -1,32 +1,31 @@
-<html>
-    
-    <head>
-        
-        <meta charset="utf-8">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
-
-        <link href="/css/register.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-rel="stylesheet" />
-        <link rel="stylesheet" href="register.css">
-        <title>Dietetica Tafi</title>
-
-        
-
-    </head>
-       <header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/seccion.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <title>Dietética Tafi</title>
+</head>
+<body>
+    <header>
         <nav class='header'>
             <div class="marca">
-                <img src="img/logo.jpg" alt="logo" class="logo">
-                <h3>DIETÉTICA TAFI</h3>
+                <img src="img/logo.svg" alt="logo" class="logo">
             </div>
-            <div class="barra"><input type="text"></div>
+            <div class="barra">
+                <input type="text" placeholder="Buscar producto">
+            </div>
             <div class="carrito"><a href=#Carrito"><i class="fas fa-shopping-cart"></i></a></div>
-            <div class="ingreso"><a href="login.html">Iniciar sesion</a>
-            <a href="register.html">Crear cuenta</a></div>
+            <div class="burger-menu"><i class="fas fa-bars"></i></div>
+            <div class="ingreso">
+            <a href="login.html"><i class="fas fa-user"></i></a>
+            </div>
         </nav>
     </header>
     <body>
@@ -66,28 +65,32 @@ rel="stylesheet" />
         </form>
         <footer>
             <div class="container_footer">
-                <div class="box__footer">
-                    <a href="#">Info de la empresa</a>
-                    <a href="#">Donde encontrarnos</a>
-                    <a href="#">Contactenos</a>
+                <div id='redes'>
+                    <a href="#"><img src="img/Facebook.jpg" class='redes'></a>
+                    <a href="#"><img src="img/Instagram.jpg" class='redes'></a>
+                    <a href="#"><img src="img/Twitter.jpg" class='redes'></a>
                 </div>
                 <div class="box__footer">
-                    <a href="#">Como comprar</a>
-                    <a href="#">Preguntas freq.</a>
-                    <a href="#">Políticas de priv.</a>
+                    <p class='sub'>Nosotros</p>
+                    <p><a href="#">Info de la empresa</a></p>
+                    <p><a href="#">Donde encontrarnos</a></p>
+                    <p><a href="#">Contactenos</a></p>
                 </div>
                 <div class="box__footer">
-                    <a href="#">Mi cuenta</a>
-                    <a href="/register">Registrarme</a>
-                    <a href="#">Productos fav.</a>
+                    <p class='sub'>Comprar</p>
+                    <p><a href="#">Como comprar</a></p>
+                    <p><a href="#">Preguntas freq.</a></p>
+                    <p><a href="#">Políticas de priv.</a></p>
                 </div>
-    
-                 <div class="box__footer">
-                     <div class="logo">
-                         <img src="" alt="">
-                     </div>
-                 </div> 
-            </div>
+                <div class="usuario">
+                    <p><a href="#">Mi cuenta</a></p>
+                    <p><a href="/register">Registrarme</a></p>
+                    <p><a href="#">Productos fav.</a></p>
+                </div>
+                 <div class="logo-footer">
+                    <img src="img/logo.svg" alt="logo" class="logo">
+                </div>
+            </div> 
         </footer>
     </body>
 </html>
