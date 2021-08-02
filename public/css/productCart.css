@@ -284,7 +284,7 @@ footer{
 
 @media ( min-width: 1200px) {
     header {
-        max-width: 1200px;
+        max-width: 1255px;
         margin:auto;
     }
 
@@ -301,7 +301,7 @@ footer{
     }
 
     footer {
-        max-width: 1200px;
+        max-width: 1255px;
         margin: auto;
         
     }
@@ -316,7 +316,7 @@ footer{
 
 
     main {
-        max-width: 1200px;
+        max-width: 1255px;
         margin: auto;
     }
     
