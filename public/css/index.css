@@ -109,22 +109,21 @@ main section  a {
 .producto1 {
    flex: 50%;
    background-color: #fff;
-   padding:10px;
+   
 }
 .producto2 {
     flex:50%;
     background-color: #fff;
-    padding:10px;
+    
 }
 .producto3 {
     flex:50%;
     background-color: #fff;
-    padding:10px;
+    
 }
 .producto4 {
     flex:50%;
     background-color: #fff;
-    padding:10px;
 }
 
 .foto-producto {
@@ -134,19 +133,21 @@ main section  a {
 .descripcion {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
     position: relative;
     vertical-align: middle;
     text-align: center;
+    
 }
 
 main section article div i{
-    flex: 10%;
-    padding-left: 15px;
+    
 
 }
 
 .precio {
-    flex:60%;
+   
 }
 
 .barra-categorias {
@@ -319,11 +320,11 @@ footer{
         padding: 15px 15px 20px;
     }
 
-    .producto1 {
-        flex: 20%;
+    .producto {
+        flex: 25%;
     }
 
-    .producto2 {
+    .producto {
         flex: 20%;
     }
 

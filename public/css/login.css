@@ -55,11 +55,10 @@ header {
 
 
 .form-login{
-    width: 400px;
+    width: 100%;
     background: darkgreen;
     padding: 30px;
     margin: auto;
-    margin-top: 100px;
     border-radius: 4px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
@@ -159,6 +158,9 @@ footer{
 
 @media (min-width:490px) {
     
+    .form-login {
+        max-width:490px ;
+    }
 
     .navbar{
         max-width: 550px;
@@ -196,9 +198,38 @@ footer{
 }
 
 @media ( min-width: 1200px) {
-
+    body {
+        background-color: lightgray;
+    }
+    header {
+        max-width: 1200px;
+        margin: auto;
+    }
     .navbar{
         max-width: 1200px;
         margin: auto;
+    }
+    main {
+        max-width: 1200px;
+        margin: auto;
+        background-color: white;
+    }
+    main {
+        padding: 30px 0;
+    }
+    footer {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .container_footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        vertical-align: middle;
+    }
+
+    .logo-footer {
+        width: 80%;
     }
 }
