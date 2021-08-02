@@ -1,8 +1,14 @@
 # -grupo_5_dietetica
 -grupo_5_dietetica
--Temática: Dietética -Nombre del proyecto: Tafi Dietetica -Producto-servicio a brindar: Nuestro producto-servicio a brindar serán un conjunto de productos orgánicos, veganos y aptos para celiacos (todos separados en sus respectivas categorías) donde podrán adquirirlos directamente de la página web. Nuestro público objetivo estará segmentado por productos chicos para todo tipo de personas y además para los hogares ofreciendo productos en packaging con mayor volumen. La página web servirá para que los consumidores puedan comprar desde toda Argentina. wireframe-figma: https://www.figma.com/file/RMIh1VM99YK0G7NifL5F0l/Tafi-dieteticas-%2F-Grupo-5?node-id=0%3A1 Primer borrador de la pagina web:
+-Temática: Dietética -Nombre del proyecto: Tafi Dietetica -Producto-servicio a brindar: Nuestro producto-servicio a brindar serán un conjunto de productos orgánicos, veganos y aptos para celiacos (todos separados en sus respectivas categorías) donde podrán adquirirlos directamente de la página web. Nuestro público objetivo estará segmentado por productos chicos para todo tipo de personas y además para los hogares ofreciendo productos en packaging con mayor volumen. La página web servirá para que los consumidores puedan comprar desde toda Argentina. wireframe-figma: https://www.figma.com/file/RMIh1VM99YK0G7NifL5F0l/Tafi-dieteticas-%2F-Grupo-5?node-id=0%3A1 
+
+Primer borrador de la pagina web:
 
 https://www.figma.com/file/RMIh1VM99YK0G7NifL5F0l/Francisco-Gomar's-team-library?node-id=0%3A1
+
+Tablero Trello para organización de sprints:
+
+https://trello.com/b/Mp0SO1nx/grupo-5
 
 Para el siguiente proyecto vamos a tomar como referencias las siguientes paginas web:
 
