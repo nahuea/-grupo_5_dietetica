@@ -1,3 +1,5 @@
+/*//////////-GENERAL-//////////*/
+
 *{
     margin:0;
     padding:0;
@@ -7,6 +9,8 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+/*//////////-HEADER-//////////*/
 
 .header {
     display: flex;
@@ -24,6 +28,8 @@ body {
 .logo{
     width: 40px;
     height: 40px;
+    display: flex;
+    align-items: center;
 }
 
 .carrito{
@@ -60,6 +66,8 @@ nav a{
     color: white;
 }
 
+/*//////////-MAIN-//////////*/
+
 #categorias{
     display: flex;
     justify-content: space-between;
@@ -77,13 +85,13 @@ nav a{
 }
 
 .categoria {
-    height: 60px;
+    height: 33px;
     width: 360px;
     text-align: center;
     display: block;
     background-color: rgba(16, 172, 132, 0.32);
-    font-size: 24px;
-    font-weight: 800;
+    font-size: 16px;
+    font-weight: 400;
     padding-bottom: 10px;
 }
 
@@ -95,7 +103,7 @@ nav a{
 .producto{
     width: 170px;
     height: 224px;
-    font-size: 12px;
+    font-size: 11px;
     text-align: center;
     padding: 5px;
 }
@@ -125,37 +133,65 @@ nav a{
     color: white;
 }
 
+/*//////////-FOOTER-//////////*/
+
 footer{
     width: 100vw;
     background-color: #10AC84;
-    color: black;
+    color: white;
+}
+
+.redes{
+    height: 35px;
+    width: 35px;
+    background-color: #10AC84;
 }
 
 .container_footer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: center;
 }
 
-.container_footer div{
-    display: flex;
-    flex-direction: column;
+.sub{
+    font-weight: 600;
+    font-size: 11px;
 }
 
+.box__footer{
+    padding: 10px;
+}
 
 .box__footer a{
-    margin-top: 20px;
-    color: black;
-    font-weight: 600;
-    padding-left: 80px;
-    padding-right: 80px;
+    color: white;
+    font-size: 11px;
+}
+
+.usuario{
+    display: none;
+}
+
+.usuario a{
+    color: white;
+    font-size: 11px;
 }
 
 .box__footer a:hover{
     opacity: 0.8;
-
 }
+
+.usuario a:hover{
+    opacity: 0.8;
+}
+
+.logo-footer {
+    display: none;
+}
+
+/*//////////-MEDIA QUERIES-//////////*/
