@@ -1,4 +1,6 @@
-/*//////////-GENERAL-//////////*/
+/*///////////////////////////////////--INDEX--///////////////////////////////////*/
+
+/*////////////////////-GENERAL-////////////////////*/
 *{
     margin:0px;
     padding:0px;
@@ -8,7 +10,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/*//////////-HEADER-//////////*/
+
+/*////////////////////-HEADER-////////////////////*/
 
 
 header {
@@ -27,8 +30,8 @@ header {
     width: 45px;
 }
 
-.carrito {
-    
+.carrito i {
+    display: none;
 }
 
 .barra input {
@@ -57,29 +60,46 @@ header {
 
 
 
-/*//////////-MAIN-//////////*/
+/*////////////////////-MAIN-////////////////////*/
+main {
+    
+    text-align: center;
+    
+    display: block;
+}
+
+.banner-img {
+    padding:15px 15px 20px;
+    width: 100%;
+}
+
+main h2 {
+    font-size: 20px;
+    display: block;
+    color: white;
+    background-color: #10AC84;
+    opacity: 0.3;
+    padding: 5px 0;
+}
+main article {
+    display: ;
+}
+
+/*////////////////////-FOOTER-////////////////////*/
 
 
 
-/*//////////-FOOTER-//////////*/
-
-
-
-/*//////////-MEDIA QUERIES-//////////*/
+/*////////////////////-MEDIA QUERIES-////////////////////*/
 
 @media (min-width:490px) {
-    header {
-        height: 75px;
-    }
+    
 
     .navbar{
-        max-width: 1200px;
+        max-width: 550px;
         margin: auto;
     }
 
-    .marca {
-        width: 60px;
-    }
+    
     
     .barra {
         width: 50%;
@@ -97,7 +117,22 @@ header {
         display: inline;
         text-decoration: none;
         margin-left: 5px;
+        color: white;
         
     }
    
+    .carrito i {
+        display: inline;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@media ( min-width: 1200px) {
+
+    .navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+
 }
