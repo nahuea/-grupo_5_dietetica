@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
-
         <link href="/css/productDetail.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-rel="stylesheet" />
         <link rel="stylesheet" href="productDetail.css">
-
- <title>Dietética Tafi</title>
-   
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <title>Dietética Tafi</title>
     
 </head>
 <body>
@@ -49,7 +49,7 @@ rel="stylesheet" />
             <p class="precio"> $170</p>
         
             <form action="/productDetail" method="POST">
-            <label>Seleccione la cantidad</label>
+            <label></label>
             <select name="cantidad">
                 <option value="0">0</option>
                 <option value="1">1</option>
@@ -102,43 +102,45 @@ rel="stylesheet" />
                     <div>$38.-</div>
                     <div class='agregar'><a href=#AgregarCarrito>Agregar al Carrito</a></div>
                 </article>
-                <article class='producto'>
-                    <img src="img/galletas-tanlatam.png"  alt="Galletitas Tanlatam Zafrán">
-                    <div class='nombre'>Galletitas Tanlatam x 150 gs. Zafrán</div>
-                    <div>$98.-</div>
-                    <div class='agregar'><a href=#AgregarCarrito>Agregar al Carrito</a></div>
-                </article>
+               
             </section>
         </div>
     </main>
+     
     <footer>
-        <div class="container_footer">
+        <div class="modoflex">
             <div id='redes'>
                 <a href="#"><img src="img/Facebook.png" class='redes'></a>
                 <a href="#"><img src="img/Instagram.png" class='redes'></a>
                 <a href="#"><img src="img/Twitter.png" class='redes'></a>
             </div>
+
             <div class="box__footer">
                 <p class='sub'>Nosotros</p>
                 <p><a href="#">Info de la empresa</a></p>
                 <p><a href="#">Donde encontrarnos</a></p>
                 <p><a href="#">Contactenos</a></p>
             </div>
+
             <div class="box__footer">
                 <p class='sub'>Comprar</p>
                 <p><a href="#">Como comprar</a></p>
                 <p><a href="#">Preguntas freq.</a></p>
                 <p><a href="#">Políticas de priv.</a></p>
             </div>
+
             <div class="usuario">
+                <p class="sub">Usuario</p>
                 <p><a href="#">Mi cuenta</a></p>
                 <p><a href="/register">Registrarme</a></p>
                 <p><a href="#">Productos fav.</a></p>
             </div>
-             <div class="logo-footer">
+
+            <div class="logo-footer">
                 <img src="img/logo.svg" alt="logo" class="logo">
             </div>
-        </div> 
+        </div>
+
     </footer>
 </body>
 </html>

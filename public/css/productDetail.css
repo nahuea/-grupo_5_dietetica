@@ -12,6 +12,7 @@ body {
 
 
 
+
 header {
     background-color: #10AC84;
     height: 60px;
@@ -59,6 +60,7 @@ header {
 
 
 
+
 /*//////////-MAIN-//////////*/
 .nombre{
     font-weight: bold;
@@ -100,50 +102,34 @@ header {
     display: flex;
     flex-wrap: wrap;
 }
-/*
-.articulos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0px 50px 90px;
+.precio {
+    font-size: 25px;
+    
 }
 
-.producto{
-    width: 160px;
-    height: 220px;
-    font-size: 14px;
-    text-align: center;
-    padding: 15px 40px;
-}
-
-
-.producto img{
-    width: 150px;
-    height: 150px;
-} 
-*/
 .detail {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    font-size: 25px;
+    font-size: 20px;
 }
-.mantequilla-de-mani {
-display: flex;
-flex-wrap: wrap; 
-display:block;
-margin:auto;
-justify-content: center;
-border: ridge #000000 1px;
-width: 550px;
-height: 550px;
-left: 15px;
-top: 75px;
-margin-top: 20px;
-box-shadow: 0px 0px 10px rgb(100,100,100);
-}
+
+.mantequilla-de-mani{ 
+    display: flex;
+    flex-wrap: wrap; 
+    display:block;
+    margin:auto;
+    justify-content: center;
+    border: ridge #000000 1px;   
+    width: 250px;
+    height: 200px;
+    left: 103px;
+    top: 212px;
+    margin-top: 20px;
+        }
+
 .nombre-de-producto {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold ;
 }
 .parrafo{
@@ -154,23 +140,20 @@ box-shadow: 0px 0px 10px rgb(100,100,100);
 }
 
 /*//////////-FOOTER-//////////*/
-
-footer{
-    width: 100vw;
+footer {
+    width: 100%;
     background-color: #10AC84;
     color: white;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
+
 }
 
 .redes{
-    height: 35px;
     width: 35px;
     background-color: #10AC84;
+    margin-bottom: 15px;
 }
 
-.container_footer{
+footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -188,10 +171,12 @@ footer{
 }
 
 .box__footer{
-    padding: 10px;
+    margin-bottom: 15px;
 }
 
 .box__footer a{
+    margin: auto;
+    text-decoration: none;
     color: white;
     font-size: 11px;
 }
@@ -201,6 +186,7 @@ footer{
 }
 
 .usuario a{
+    text-decoration: none;
     color: white;
     font-size: 11px;
 }
@@ -254,6 +240,158 @@ footer{
         text-decoration: none;
         color: white;
     }
+
+    .banner-index {
+        display: block;
+        padding: 15px 15px 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .barra-categorias {
+        display: flex;
+        background-color: #10AC84;
+        font-size: 14px;
+        font-weight: 400;
+        justify-content: space-evenly;
+        padding: 10px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .barra-categorias a {
+        text-decoration: none;
+        color: white;
+    }
+    .usuario {
+        display: block;
+    }
+    footer {
+        margin: auto;
+    }
+
+    .logo-footer {
+        display: block;
+        margin: auto;
+        max-width:102px ;
+    }
+    .nombre-de-producto {
+        font-size: 30px;
+        font-weight: bold ;
+    }
+    .detail{
+        font-size: 25px;
+    }
+    .mantequilla-de-mani {
+        display: flex;
+        flex-wrap: wrap; 
+        display:block;
+        margin:auto;
+        justify-content: center;
+        border: ridge #000000 1px;
+        width: 400px;
+        height: 400px;
+        left: 15px;
+        top: 75px;
+        margin-top: 20px;
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+        }
+
+    
+}
+
+@media ( min-width: 1200px) {
+    header {
+        max-width: 1200px;
+        margin:auto;
+    }
+
+    .navbar{
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .banner-index {
+        padding: 15px 15px 20px;
+    }
+
+    .producto1 {
+        flex: 20%;
+    }
+
+    .producto2 {
+        flex: 20%;
+    }
+
+    .producto3 {
+        flex: 20%;
+    }
+
+    .producto4 {
+        flex: 20%;
+    }
+    
+    .logo-footer {
+        display: block;
+        flex: 20%;
+        margin: 0;
+    }
+
+    footer {
+        max-width: 1200px;
+        margin: auto;
+        
+    }
+
+    .modoflex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        vertical-align: middle;
+
+        
+    }
+
+    .titulo-pn {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    body {
+        background-color: lightgrey;
+    }
+
+    
+
+    .logo {
+        width: 80%;
+    }
+    .nombre-de-producto {
+        font-size: 30px;
+        font-weight: bold ;
+    }
+    .detail{
+        font-size: 25px;
+    }
+    .mantequilla-de-mani {
+        display: flex;
+        flex-wrap: wrap; 
+        display:block;
+        margin:auto;
+        justify-content: center;
+        border: ridge #000000 1px;
+        width: 400px;
+        height: 400px;
+        left: 15px;
+        top: 75px;
+        margin-top: 20px;
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+        }
 }
 
 @media ( min-width: 1200px) {
@@ -262,67 +400,6 @@ footer{
         max-width: 1200px;
         margin: auto;
     }
+    
 
 }
-@media (max-width :490px){
-    .mantequilla-de-mani{ 
-        display: flex;
-        flex-wrap: wrap; 
-        display:block;
-        margin:auto;
-        justify-content: center;
-        border: ridge #000000 1px;   
-        width: 250px;
-        height: 200px;
-        left: 103px;
-        top: 212px;
-            }
-}
-
-/*
-.logo{
-    width: 240px;
-    height: 40px;
-    padding-top: 36px;
-    padding-bottom: 36px;
-    padding-left: 83px;
-    display: flex;
-    justify-content: center;
-}
-
-.carrito{
-    padding-top: 36px;
-    padding-bottom: 36px;
-    padding-left: 17px;
-    padding-right: 33px;
-}
-
-.ingreso{
-    padding-top: 36px;
-    padding-bottom: 36px;
-    padding-left: 33px;
-    padding-right: 121px;
-}
-
-
-.fab {
-    font-size: 3em;
-    color: white;
-    text-align: center;
-}
-
-input{
-    width: 340px;
-    height: 32px;
-}
-
-.fas{
-    font-size: 2em;
-    color: white;
-}
-
-nav a {
-    color: white;
-}
-
-*/
