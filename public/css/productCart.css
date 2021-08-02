@@ -1,5 +1,3 @@
-/*///////////////////////////////////--INDEX--///////////////////////////////////*/
-
 /*////////////////////-GENERAL-////////////////////*/
 *{
     margin:0px;
@@ -71,94 +69,16 @@ header {
 
 
 /*////////////////////-MAIN-////////////////////*/
-main {
-    text-align: center; 
+
+.compras {
+    height: 33px;
+    width: 100vw;
+    text-align: center;
     display: block;
-    width: 100%;
-    background-color: #fff;
-}
-
-.banner-index {
-    display: none;
-    width: 100%;
-}
-
-.titulo-pn {
-    background-color: rgba(16,172, 132, 0.3);
-    text-align: center;
-    padding: 5px 0;
-    vertical-align: middle;
-    
-    
-}
-
-.titulo-pn h2 {
-    font-size: 18px;
-}
-
-main section {
-    display:flex;
-    flex-wrap: wrap;
-    padding-bottom: 20px;
-}
-
-main section  a {
-    text-decoration: none;
-    color: black;
-}
-.producto1 {
-   flex: 50%;
-   background-color: #fff;
-   padding:10px;
-}
-.producto2 {
-    flex:50%;
-    background-color: #fff;
-    padding:10px;
-}
-.producto3 {
-    flex:50%;
-    background-color: #fff;
-    padding:10px;
-}
-.producto4 {
-    flex:50%;
-    background-color: #fff;
-    padding:10px;
-}
-
-.foto-producto {
-    width: 100%;
-}
-
-.descripcion {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    vertical-align: middle;
-    text-align: center;
-}
-
-main section article div i{
-    flex: 10%;
-    padding-left: 15px;
-
-}
-
-.precio {
-    flex:60%;
-}
-
-.barra-categorias {
-    display: none;
-}
-
-.barra-categorias div :hover {
-    opacity: 0.8;
-}
-
-.nombre {
-    text-align: center;
+    background-color: rgba(16, 172, 132, 0.32);
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 10px;
 }
 
 /*////////////////////-FOOTER-////////////////////*/

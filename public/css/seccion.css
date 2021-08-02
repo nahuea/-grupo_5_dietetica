@@ -66,6 +66,13 @@ header {
 
 /*//////////-MAIN-//////////*/
 
+main {
+    text-align: center; 
+    display: block;
+    width: 100%;
+    background-color: #fff;
+}
+
 #categorias{
     display: flex;
     justify-content: space-between;
