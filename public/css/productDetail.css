@@ -351,6 +351,7 @@ footer{
 
         
     }
+    
 
     .titulo-pn {
         max-width: 1200px;
@@ -360,6 +361,7 @@ footer{
     main {
         max-width: 1200px;
         margin: auto;
+        background-color: white;
     }
     
     body {
@@ -389,7 +391,7 @@ footer{
         height: 400px;
         left: 15px;
         top: 75px;
-        margin-top: 20px;
+        padding-top: 20px;
         box-shadow: 0px 0px 10px rgb(100,100,100);
         }
 }
