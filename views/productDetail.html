@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+        <link href="/css/productDetail.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+        <link rel="stylesheet" href="productDetail.css">
+
+ <title>Dietética Tafi</title>
+   
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="marca">
+                <img src="img/logo.svg" alt="logo" class="logo">
+            </div>
+            <div class="barra">
+                <input type="text" placeholder="Buscar producto">
+            </div>
+            <div class="burger-menu">
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="carrito">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="user">
+                <a href="#"><i class="fas fa-user-circle"></i> <h4>Ingresar</h4></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+        <img src="img\mantequilla-mani.png"  alt="Mantequilla de Mani" class="mantequilla-de-mani">
+        </div>
+        <div class="detail">
+           <p class="nombre-de-producto">  Mantequilla de Mani<p>
+           
+            Cantidad
+           </div>
+        
+        <div class="detail">
+            <p class="precio"> $170</p>
+        
+            <form action="/productDetail" method="POST">
+            <label>Seleccione la cantidad</label>
+            <select name="cantidad">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            </form>
+        </div>
+        <div>
+        <p class="parrafo" >
+            La pasta hecha a base de maní es un alimento innovador para que lo incorpores a tu alimentación.
+            Para un desayuno o merienda nutritiva o para complementar tus recetas con energía. 
+            Hecha 100% con maní tostado, sin aditivos.
+            Es un alimento vegano, gluten free y organico</p>
+        
+        </div>
+        <div>
+            <h2>Productos similares</h2>
+        </div>
+        <div>
+            <section class="articulos">
+                <article class='producto'>
+                    <img src="img/aceite-almendras.png"  alt="Aceite Hierbas del Oasis">
+                    <div>Aceite de Almendras x 30 cc. Hierbas del Oasis</div>
+                    <div>$409.-</div>
+                    <div class='agregar'><a href=#AgregarCarrito>Agregar al Carrito</a></div>
+                </article>
+                <article class='producto'>
+                    <img src="img/alfajor-rincon.png"  alt="Alfajor Rincon Vegano">
+                    <div>Alfajor x 80 gs. Un Rincón Vegano</div>
+                    <div>$58.-</div>
+                    <div class='agregar'><a href=#AgregarCarrito>Agregar al Carrito</a></div>
+                </article>
+                <article class='producto'>
+                    <img src="img/algas-kelp.png"  alt="Algas Kelp Prama">
+                    <div>Algas Kelp x 100 gs. Prama</div>
+                    <div>$515.-</div>
+                    <div class='agregar'><a href=#AgregarCarrito>Agregar al Carrito</a></div>
+                </article>
+                <article class='producto'>
+                    <img src="img/barra-frutilla.png"  alt="Barra de arroz frutilla Lulemuu">
+                    <div class='nombre'>Barra de Arroz con Baño de Frutilla x 12 gs. Lulemuu</div>
+                    <div>$38.-</div>
+                    <div class='agregar'><a href=#AgregarCarrito>Agregar al Carrito</a></div>
+                </article>
+                <article class='producto'>
+                    <img src="img/galletas-tanlatam.png"  alt="Galletitas Tanlatam Zafrán">
+                    <div class='nombre'>Galletitas Tanlatam x 150 gs. Zafrán</div>
+                    <div>$98.-</div>
+                    <div class='agregar'><a href=#AgregarCarrito>Agregar al Carrito</a></div>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container_footer">
+            <div id='redes'>
+                <a href="#"><img src="img/Facebook.png" class='redes'></a>
+                <a href="#"><img src="img/Instagram.png" class='redes'></a>
+                <a href="#"><img src="img/Twitter.png" class='redes'></a>
+            </div>
+            <div class="box__footer">
+                <p class='sub'>Nosotros</p>
+                <p><a href="#">Info de la empresa</a></p>
+                <p><a href="#">Donde encontrarnos</a></p>
+                <p><a href="#">Contactenos</a></p>
+            </div>
+            <div class="box__footer">
+                <p class='sub'>Comprar</p>
+                <p><a href="#">Como comprar</a></p>
+                <p><a href="#">Preguntas freq.</a></p>
+                <p><a href="#">Políticas de priv.</a></p>
+            </div>
+            <div class="usuario">
+                <p><a href="#">Mi cuenta</a></p>
+                <p><a href="/register">Registrarme</a></p>
+                <p><a href="#">Productos fav.</a></p>
+            </div>
+             <div class="logo-footer">
+                <img src="img/logo.svg" alt="logo" class="logo">
+            </div>
+        </div> 
+    </footer>
+</body>
+</html>
