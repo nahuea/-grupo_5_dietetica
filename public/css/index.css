@@ -9,7 +9,9 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-
+p {
+    font-size:14px;
+}
 
 /*////////////////////-HEADER-////////////////////*/
 
@@ -18,6 +20,7 @@ header {
     background-color: #10AC84;
     height: 60px;
     padding: 10px 15px;
+    width: 100%;
 }
 
 .navbar {
@@ -28,6 +31,10 @@ header {
 
 .marca {
     width: 45px;
+}
+
+.carrito a {
+    text-decoration: none;
 }
 
 .carrito i {
@@ -41,15 +48,18 @@ header {
     text-align: center;
 }
 
+.user a {
+    text-decoration: none;
+}
+
 .user h4 {
  display: none;
- text-decoration: none;
+
 }
 
 .burger-menu i{
     
     color: white;
-    size: 2x
 }
 
 .user i{
@@ -62,47 +72,111 @@ header {
 
 /*////////////////////-MAIN-////////////////////*/
 main {
-    
-    text-align: center;
-    
+    text-align: center; 
     display: block;
+    width: 100%;
+    background-color: #fff;
 }
 
-.banner-img {
-    padding:15px 15px 20px;
+.banner-index {
+    display: none;
     width: 100%;
 }
 
-main h2 {
-    font-size: 20px;
-    display: block;
-    color: white;
-    background-color: #10AC84;
-    opacity: 0.3;
+.titulo-pn {
+    background-color: rgba(16,172, 132, 0.3);
+    text-align: center;
     padding: 5px 0;
+    vertical-align: middle;
+    
+    
 }
-main article {
-    display: ;
+
+.titulo-pn h2 {
+    font-size: 18px;
+}
+
+main section {
+    display:flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+main section  a {
+    text-decoration: none;
+    color: black;
+}
+.producto1 {
+   flex: 50%;
+   background-color: #fff;
+   padding:10px;
+}
+.producto2 {
+    flex:50%;
+    background-color: #fff;
+    padding:10px;
+}
+.producto3 {
+    flex:50%;
+    background-color: #fff;
+    padding:10px;
+}
+.producto4 {
+    flex:50%;
+    background-color: #fff;
+    padding:10px;
+}
+
+.foto-producto {
+    width: 100%;
+}
+
+.descripcion {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+}
+
+main section article div i{
+    flex: 10%;
+    padding-left: 15px;
+
+}
+
+.precio {
+    flex:60%;
+}
+
+.barra-categorias {
+    display: none;
+}
+
+.barra-categorias div :hover {
+    opacity: 0.8;
+}
+
+.nombre {
+    text-align: center;
 }
 
 /*////////////////////-FOOTER-////////////////////*/
 
-footer{
-    width: 100vw;
+footer {
+    width: 100%;
     background-color: #10AC84;
     color: white;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
+
 }
 
 .redes{
-    height: 35px;
     width: 35px;
     background-color: #10AC84;
+    margin-bottom: 15px;
 }
 
-.container_footer{
+footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -120,10 +194,12 @@ footer{
 }
 
 .box__footer{
-    padding: 10px;
+    margin-bottom: 15px;
 }
 
 .box__footer a{
+    margin: auto;
+    text-decoration: none;
     color: white;
     font-size: 11px;
 }
@@ -133,6 +209,7 @@ footer{
 }
 
 .usuario a{
+    text-decoration: none;
     color: white;
     font-size: 11px;
 }
@@ -186,13 +263,116 @@ footer{
         text-decoration: none;
         color: white;
     }
-}
 
-@media ( min-width: 1200px) {
-
-    .navbar{
+    .banner-index {
+        display: block;
+        padding: 15px 15px 20px;
         max-width: 1200px;
         margin: auto;
     }
 
+    .barra-categorias {
+        display: flex;
+        background-color: #10AC84;
+        font-size: 14px;
+        font-weight: 400;
+        justify-content: space-evenly;
+        padding: 10px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .barra-categorias a {
+        text-decoration: none;
+        color: white;
+    }
+    .usuario {
+        display: block;
+    }
+    footer {
+        margin: auto;
+    }
+
+    .logo-footer {
+        display: block;
+        margin: auto;
+        max-width:102px ;
+    }
+
+    
+
+    
+}
+
+@media ( min-width: 1200px) {
+    header {
+        max-width: 1200px;
+        margin:auto;
+    }
+
+    .navbar{
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .banner-index {
+        padding: 15px 15px 20px;
+    }
+
+    .producto1 {
+        flex: 20%;
+    }
+
+    .producto2 {
+        flex: 20%;
+    }
+
+    .producto3 {
+        flex: 20%;
+    }
+
+    .producto4 {
+        flex: 20%;
+    }
+    
+    .logo-footer {
+        display: block;
+        flex: 20%;
+        margin: 0;
+    }
+
+    footer {
+        max-width: 1200px;
+        margin: auto;
+        
+    }
+
+    .modoflex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        vertical-align: middle;
+
+        
+    }
+
+    .titulo-pn {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    body {
+        background-color: lightgrey;
+    }
+
+    
+
+    .logo {
+        width: 80%;
+    }
 }
