@@ -13,7 +13,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     height: 110px;
-    width: 100vw;
+    width: 360px;
     background-color: #10AC84;
 }
 
@@ -28,13 +28,9 @@ body {
     margin-left: 25px;
 }
 
-.marca h3{
-    margin:auto;
-}
-
 .logo{
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     margin:auto;
 }
 
@@ -46,22 +42,14 @@ body {
 }
 
 .ingreso{
-    padding-top: 36px;
-    padding-bottom: 36px;
-    padding-left: 33px;
-    padding-right: 121px;
-}
-
-.barra{
-    padding-top: 36px;
-    padding-bottom: 36px;
-    padding-left: 10px;
-    padding-right: 17px;
+    width: 23px;
+    height: 23px;
 }
 
 input{
-    width: 340px;
-    height: 32px;
+    width: 185px;
+    height: 25px;
+    border-radius: 8px;
 }
 
 .fas{
@@ -69,14 +57,15 @@ input{
     color: white;
 }
 
-nav a {
+nav a{
     color: white;
 }
 
-#categorias {
+#categorias{
     display: flex;
     justify-content: space-between;
     margin:25px 140px 50px;
+    display: none;
 }
 
 #categorias div{
@@ -85,6 +74,7 @@ nav a {
     background-color: rgba(16, 172, 132, 0.32);
     text-align: center;
     border-radius: 4px;
+    display: none;
 }
 
 .categoria {
@@ -119,6 +109,10 @@ nav a {
 
 .producto div{
     margin:auto;
+}
+
+.nombre{
+    font-weight: bold;
 }
 
 .agregar{
