@@ -68,12 +68,11 @@ header {
     background-color: rgba(16, 172, 132, 0.32);
     text-align: center;
     border-radius: 4px;
-    display: none;
 }
 
 .categoria {
     height: 33px;
-    width: 360px;
+    width: 100vw;
     text-align: center;
     display: block;
     background-color: rgba(16, 172, 132, 0.32);
@@ -85,6 +84,7 @@ header {
 .articulos {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .producto{
@@ -126,6 +126,9 @@ footer{
     width: 100vw;
     background-color: #10AC84;
     color: white;
+    left: 0px;
+    bottom: 0px;
+    margin-top: 30px;
 }
 
 .redes{
@@ -182,3 +185,59 @@ footer{
 }
 
 /*//////////-MEDIA QUERIES-//////////*/
+@media (min-width:490px) {
+    
+
+    .navbar{
+        max-width: 550px;
+        margin: auto;
+    }
+
+    
+    
+    .barra {
+        width: 50%;
+    }
+
+    .barra input {
+        width: 100%;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .user h4 {
+        display: inline;
+        text-decoration: none;
+        margin-left: 5px;
+        color: white;
+        
+    }
+   
+    .carrito i {
+        display: inline;
+        text-decoration: none;
+        color: white;
+    }
+
+}
+
+@media ( min-width: 1200px) {
+
+    .navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    #categorias  {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .categoria {
+        display: none;
+    }
+
+
+}
