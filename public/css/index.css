@@ -1,7 +1,7 @@
 /*//////////-GENERAL-//////////*/
 *{
-    margin:0;
-    padding:0;
+    margin:0px;
+    padding:0px;
     box-sizing: border-box;
 }
 body {
@@ -9,62 +9,51 @@ body {
 }
 
 /*//////////-HEADER-//////////*/
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 60px;
-    width: 100vw;
+
+
+header {
     background-color: #10AC84;
+    height: 60px;
+    padding: 10px 15px;
 }
 
-.marca{
+.navbar {
     display: flex;
-    flex-wrap: wrap;
-    text-orientation: column;
-    width: 160px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marca {
+    width: 45px;
+}
+
+.carrito {
+    
+}
+
+.barra input {
+    border: none;
+    border-radius: 20px;
+    height: 25px;
     text-align: center;
-    padding-left: 60px;
-    padding-right: 15px;
-    margin-left: 25px;
 }
 
-.marca h3{
-    margin:auto;
+.user h4 {
+ display: none;
+ text-decoration: none;
 }
 
-.logo{
-    width: 40px;
-    height: 40px;
-    margin:auto;
+.burger-menu i{
+    
+    color: white;
+    size: 2x
 }
 
-.barra{
-    padding-top: 36px;
-    padding-bottom: 36px;
-    padding-left: 10px;
-    padding-right: 17px;
+.user i{
+    
+    color: white;
+    
 }
-
-.carrito{
-    padding-top: 36px;
-    padding-bottom: 36px;
-    padding-left: 17px;
-    padding-right: 33px;
-}
-
-.ingreso{
-    padding-top: 36px;
-    padding-bottom: 36px;
-    padding-left: 33px;
-    padding-right: 121px;
-}
-
-input{
-    width: 340px;
-    height: 32px;
-}
-
 
 
 
@@ -77,3 +66,38 @@ input{
 
 
 /*//////////-MEDIA QUERIES-//////////*/
+
+@media (min-width:490px) {
+    header {
+        height: 75px;
+    }
+
+    .navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .marca {
+        width: 60px;
+    }
+    
+    .barra {
+        width: 50%;
+    }
+
+    .barra input {
+        width: 100%;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .user h4 {
+        display: inline;
+        text-decoration: none;
+        margin-left: 5px;
+        
+    }
+   
+}
