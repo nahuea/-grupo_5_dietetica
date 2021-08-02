@@ -87,7 +87,67 @@ main article {
 
 /*////////////////////-FOOTER-////////////////////*/
 
+footer{
+    width: 100vw;
+    background-color: #10AC84;
+    color: white;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
 
+.redes{
+    height: 35px;
+    width: 35px;
+    background-color: #10AC84;
+}
+
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.sub{
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.box__footer{
+    padding: 10px;
+}
+
+.box__footer a{
+    color: white;
+    font-size: 11px;
+}
+
+.usuario{
+    display: none;
+}
+
+.usuario a{
+    color: white;
+    font-size: 11px;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.usuario a:hover{
+    opacity: 0.8;
+}
+
+.logo-footer {
+    display: none;
+}
 
 /*////////////////////-MEDIA QUERIES-////////////////////*/
 
