@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const port = 3000;
 const path = require('path')
+app.set('view engine' , 'ejs');
 app.get('/', function(request, response) {
     response.sendFile(path.join(__dirname, 'views/index.html'))
 })
