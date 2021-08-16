@@ -1,0 +1,318 @@
+/*//////////-GENERAL-//////////*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*//////////-HEADER-//////////*/
+
+header {
+    background-color: #10AC84;
+    height: 60px;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marca {
+    width: 45px;
+}
+
+.carrito a {
+    text-decoration: none;
+}
+
+.carrito i {
+    display: none;
+}
+
+.barra input {
+    border: none;
+    border-radius: 20px;
+    height: 25px;
+    text-align: center;
+}
+
+.user a {
+    text-decoration: none;
+}
+
+.user h4 {
+ display: none;
+
+}
+
+.burger-menu i{
+    
+    color: white;
+}
+
+.user i{
+    
+    color: white;
+    
+}
+
+/*//////////-MAIN-//////////*/
+
+main {
+    text-align: center; 
+    display: block;
+    width: 100%;
+    background-color: #fff;
+}
+
+#categorias{
+    display: flex;
+    justify-content: space-between;
+    margin:25px 140px 50px;
+    display: none;
+}
+
+#categorias div{
+    width: 140px;
+    height: 30px;
+    background-color: rgba(16, 172, 132, 0.32);
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 0;
+}
+
+.categoria {
+    height: 33px;
+    width: 100vw;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(16, 172, 132, 0.32);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product{
+    width: 225px;
+    height: 300px;
+    font-size: 15px;
+    text-align: center;
+    padding: 3px;
+}
+
+.product img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.product div{
+    margin:auto;
+}
+
+.name{
+    font-weight: bold;
+}
+
+.agregar{
+    background-color: #10AC84;
+    width: 150px;
+    height: 37px;
+    border-radius: 4px;
+    padding: 5px 0;
+}
+
+.agregar a{
+    color: white;
+}
+
+/*//////////-FOOTER-//////////*/
+
+footer {
+    width: 100%;
+    background-color: #10AC84;
+    color: white;
+
+}
+
+.redes{
+    width: 35px;
+    background-color: #10AC84;
+    margin-bottom: 15px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.sub{
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.box__footer{
+    margin-bottom: 15px;
+}
+
+.box__footer a{
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+}
+
+.usuario{
+    display: none;
+}
+
+.usuario a{
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.usuario a:hover{
+    opacity: 0.8;
+}
+
+.logo-footer {
+    display: none;
+}
+
+/*//////////-MEDIA QUERIES-//////////*/
+@media (min-width:490px) {
+    
+    .navbar{
+        max-width: 550px;
+        margin: auto;
+    }
+
+    .barra {
+        width: 50%;
+    }
+
+    .barra input {
+        width: 100%;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .user h4 {
+        display: inline;
+        text-decoration: none;
+        margin-left: 5px;
+        color: white;
+        
+    }
+   
+    .carrito i {
+        display: inline;
+        text-decoration: none;
+        color: white;
+    }
+
+    .usuario {
+        display: block;
+    }
+
+    footer {
+        margin: auto;
+    }
+
+    .logo-footer {
+        display: block;
+        margin: auto;
+        max-width:102px ;
+    }
+
+}
+
+
+@media ( min-width: 1200px) {
+
+
+    #categorias  {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 15px 20px;
+        margin: auto;
+        vertical-align: middle;
+    }
+
+    .categoria {
+        display: none;
+    }
+
+    header {
+        max-width: 1255px;
+        margin: auto;
+    }
+
+    .navbar{
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .logo-footer {
+        display: block;
+        flex: 20%;
+        margin: 0;
+    }
+
+    footer {
+        max-width: 1255px;
+        margin: auto;
+        
+    }
+
+    .modoflex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        vertical-align: middle;
+
+    }
+
+    main {
+        max-width: 1255px;
+        margin: auto;
+    }
+    
+    body {
+        background-color: lightgrey;
+    }
+
+    .logo {
+        width: 80%;
+    }
+
+
+}
