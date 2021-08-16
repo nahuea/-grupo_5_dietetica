@@ -19,7 +19,7 @@ app.get('/productCart', function(request,response){
     response.sendFile(path.join(__dirname,'views/productCart.html'))
 })
 app.get('/seccion', function(request,response){
-    response.sendFile(path.join(__dirname,'views/seccion.html'))
+    response.sendFile(path.join(__dirname,'views/seccion.ejs'))
 })
 app.use(express.static('public'))
 app.use(express.static('views'))
