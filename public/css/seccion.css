@@ -86,17 +86,18 @@ main {
     background-color: rgba(16, 172, 132, 0.32);
     text-align: center;
     border-radius: 4px;
+    padding: 5px 0;
 }
 
 .categoria {
     height: 33px;
     width: 100vw;
     text-align: center;
-    display: block;
+    vertical-align: middle;
     background-color: rgba(16, 172, 132, 0.32);
-    font-size: 16px;
-    font-weight: 400;
-    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 0;
 }
 
 .articulos {
@@ -106,16 +107,16 @@ main {
 }
 
 .producto{
-    width: 170px;
-    height: 224px;
-    font-size: 11px;
+    width: 225px;
+    height: 300px;
+    font-size: 15px;
     text-align: center;
-    padding: 5px;
+    padding: 3px;
 }
 
 .producto img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin: auto;
 }
 
@@ -129,9 +130,10 @@ main {
 
 .agregar{
     background-color: #10AC84;
-    width: 112px;
-    height: 28px;
+    width: 150px;
+    height: 37px;
     border-radius: 4px;
+    padding: 5px 0;
 }
 
 .agregar a{
@@ -237,6 +239,10 @@ footer{
         color: white;
     }
 
+    .usuario {
+        display: block;
+    }
+
     footer {
         margin: auto;
     }
@@ -256,6 +262,9 @@ footer{
     #categorias  {
         display: flex;
         justify-content: space-between;
+        padding: 15px 15px 20px;
+        margin: auto;
+        vertical-align: middle;
     }
 
     .categoria {
@@ -264,6 +273,7 @@ footer{
 
     header {
         max-width: 1255px;
+        margin: auto;
     }
 
     .navbar{
@@ -296,6 +306,9 @@ footer{
         margin: auto;
     }
     
+    body {
+        background-color: lightgrey;
+    }
 
     .logo {
         width: 80%;
