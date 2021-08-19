@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const multer = require('multer');
 const port = 3000;
 const path = require('path')
 app.set('view engine' , 'ejs');
