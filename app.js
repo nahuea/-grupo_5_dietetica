@@ -1,8 +1,14 @@
 const express = require('express')
 const app = express()
+const routes = require('./routers/register')
 const multer = require('multer');
 const port = 3000;
 const path = require('path')
+
+const routes = require('./routers/register')
+app.use(routes)
+
+const controller = require('../controllers/registerController');
 app.set('view engine' , 'ejs');
 app.get('/', function(req, res) {
     res.render(path.join(__dirname, 'views/index.ejs'))
