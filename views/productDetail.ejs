@@ -17,23 +17,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="marca">
-                <img src="img/logo.svg" alt="logo" class="logo">
-            </div>
-            <div class="barra">
-                <input type="text" placeholder="Buscar producto">
-            </div>
-            <div class="burger-menu">
-                <a href="#"><i class="fas fa-bars"></i></a>
-            </div>
-            <div class="carrito">
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-            </div>
-            <div class="user">
-                <a href="login.html"><i class="fas fa-user-circle"></i> <h4>Ingresar</h4></a>
-            </div>
-        </nav>
+        <%- include ('./partials/footer') %>
     </header>
     <main>
         <div>
@@ -108,39 +92,7 @@
     </main>
      
     <footer>
-        <div class="modoflex">
-            <div id='redes'>
-                <a href="#"><img src="img/Facebook.png" class='redes'></a>
-                <a href="#"><img src="img/Instagram.png" class='redes'></a>
-                <a href="#"><img src="img/Twitter.png" class='redes'></a>
-            </div>
-
-            <div class="box__footer">
-                <p class='sub'>Nosotros</p>
-                <p><a href="#">Info de la empresa</a></p>
-                <p><a href="#">Donde encontrarnos</a></p>
-                <p><a href="#">Contactenos</a></p>
-            </div>
-
-            <div class="box__footer">
-                <p class='sub'>Comprar</p>
-                <p><a href="#">Como comprar</a></p>
-                <p><a href="#">Preguntas freq.</a></p>
-                <p><a href="#">Políticas de priv.</a></p>
-            </div>
-
-            <div class="usuario">
-                <p class="sub">Usuario</p>
-                <p><a href="#">Mi cuenta</a></p>
-                <p><a href="/register">Registrarme</a></p>
-                <p><a href="#">Productos fav.</a></p>
-            </div>
-
-            <div class="logo-footer">
-                <img src="img/logo.svg" alt="logo" class="logo">
-            </div>
-        </div>
-
+        <%- include ('./partials/footer') %>
     </footer>
 </body>
 </html>
