@@ -5,9 +5,7 @@ const controller = require('../controllers/registerController');
 const storage = multer.diskStorage
 
 
-router.get('/', function(req, res) {
-    res.render(path.join(__dirname, 'views/register.ejs'))
-})
+router.get('/',controller.register) 
 
 router.get('/create' , controller.create)
 router.post('/' , controller.store)

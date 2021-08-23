@@ -5,16 +5,17 @@ const multer = require('multer');
 const port = 3000;
 const path = require('path')
 
-const routes = require('./routers/register')
+
 app.use(routes)
 
 const controller = require('../controllers/registerController');
 app.set('view engine' , 'ejs');
+app.set('views' , _dirname  + '/views');
 app.get('/', function(req, res) {
     res.render(path.join(__dirname, 'views/index.ejs'))
 })
 app.get('/register', function(req,res){
-    res.sendFile(path.join(__dirname,'views/register.html'))
+    res.render(path.join(__dirname,'views/register.html'))
 })
 app.get('/login', function(req,res){
     res.sendFile(path.join(__dirname,'views/login.html'))
