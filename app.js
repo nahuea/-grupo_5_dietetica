@@ -5,10 +5,12 @@ const multer = require('multer');
 const port = 3000;
 const path = require('path')
 var logMiddelware = require('./Middlewares/logMiddelwares')
+const session = require('express-session')
 
 
 app.use(routes)
 app.use(logMiddelware)
+app.use(session({secret:"algo"}))
 
 const controller = require('../controllers/registerController');
 app.set('view engine' , 'ejs');
