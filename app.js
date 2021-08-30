@@ -4,9 +4,11 @@ const routes = require('./routers/register')
 const multer = require('multer');
 const port = 3000;
 const path = require('path')
+var logMiddelware = require('./Middlewares/logMiddelwares')
 
 
 app.use(routes)
+app.use(logMiddelware)
 
 const controller = require('../controllers/registerController');
 app.set('view engine' , 'ejs');
