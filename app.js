@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const mainRouter = require('./routes/main'); 
 const productsRouter = require('./routes/products'); 
-const usersRouter = require('./routes/users'); 
+const usersRouter = require('./routers/register'); 
 
 const multer = require('multer');
 const port = 3000;
