@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
-const mainRouter = require('./routes/main'); 
-const productsRouter = require('./routes/products'); 
+const mainRouter = require('./routers/main'); 
+const productsRouter = require('./routers/productDetail'); 
 const usersRouter = require('./routers/register'); 
 
 const multer = require('multer');
