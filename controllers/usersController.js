@@ -20,19 +20,26 @@ const controller = {
         res.render('register');
     },
     store: (req, res)   => {
-        let users_copy = Users.getAll().map(product => product);
-        let UserId = uuidv4();
-        const encrypt_pass = bcryptjs.hashSync(req.body.password, 10)
-        const user = {
-            id: UserId,
-            name: req.body.name,
-            email: req.body.email,
-            age: req.body.age,
-            password: encrypt_pass,
+        if(req.file) {let users_copy = Users.getAll().map(product => product);
+            let UserId = uuidv4();
+            user.image = req.file.filename
+        
+            const encrypt_pass = bcryptjs.hashSync(req.body.password, 10)
+            const user = {
+                id: UserId,
+                name: req.body.name,
+                email: req.body.email,
+                age: req.body.age,
+                password: encrypt_pass,
+            }
+            users_copy.push(user)
+            Users.modifiedAll(users_copy);
+            res.redirect('/');
+        } else {
+            res.render('register');
         }
-        users_copy.push(user)
-        Users.modifiedAll(users_copy);
-        res.redirect('/');
+        
+       
     },
     showLogin: (req, res)=>{
         res.render('login');
