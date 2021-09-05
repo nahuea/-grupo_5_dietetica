@@ -1,6 +1,9 @@
 const express = require('express')
 const app = express()
-const routes = require('./routers/register')
+const mainRouter = require('./routes/main'); 
+const productsRouter = require('./routes/products'); 
+const usersRouter = require('./routes/users'); 
+
 const multer = require('multer');
 const port = 3000;
 const path = require('path')
@@ -8,7 +11,10 @@ var logMiddelware = require('./Middlewares/logMiddelwares')
 const session = require('express-session')
 
 
-app.use(routes)
+app.use('/', mainRouter);
+app.use('/products', productsRouter);
+app.use('/users', usersRouter);
+
 app.use(logMiddelware)
 app.use(session({secret:"algo"}))
 

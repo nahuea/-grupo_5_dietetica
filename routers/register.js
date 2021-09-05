@@ -16,10 +16,25 @@ const storage = multer.diskStorage({
     } 
 });
 
+const usersController = require('../controllers/userController');
+
 const upload = multer({ storage:storage });
 
 
-router.get('/',controller.register) 
+
+router.get('/', usersController.index);
+
+
+router.get('/register/',  usersController.create);
+router.post('/register/', usersController.store);
+
+
+router.get('/login/',  usersController.showLogin);
+router.post('/login/', usersController.login);
+
+
+router.get('/profile',  usersController.show);
+
 
 router.get('/create' , controller.create)
 router.post('/' , upload.single('imagen-de-usuario'), controller.store)
