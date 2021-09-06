@@ -7,7 +7,7 @@ const controller = {
 
     index: (req, res) => {
         const users_copy = Users.getAll()
-        res.render('users', {'users': products_copy});
+        res.render('users', {'users': users_copy});
     },
     show: (req, res) =>{
         let userId = req.session.userId;
