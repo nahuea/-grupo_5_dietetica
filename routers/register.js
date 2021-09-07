@@ -37,7 +37,7 @@ router.get('/profile',  usersController.show);
 
 
 router.get('/create' , usersController.create)
-router.post('/' , upload.single('imagen-de-usuario'), controller.store)
+router.post('/' , upload.single('imagen-de-usuario'), usersController.store)
 
 
 module.exports = router
