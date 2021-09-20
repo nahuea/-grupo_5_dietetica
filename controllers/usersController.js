@@ -1,3 +1,4 @@
+const {validationResult} = require("express-validator");
 const Users = require('../models/users.js');
 const { v4: uuidv4 } = require('uuid');
 const bcryptjs = require('bcryptjs');
@@ -20,6 +21,8 @@ const controller = {
         res.render('register');
     },
     store: (req, res)   => {
+        let errors = validationResult(req);
+        res.send(errors);
         if(req.file) {let users_copy = Users.getAll().map(product => product);
             let UserId = uuidv4();
             user.image = req.file.filename
@@ -44,6 +47,15 @@ const controller = {
     showLogin: (req, res)=>{
         res.render('login');
     },
+    processLogin:(req, res)=>{
+        let errors = validationResult(req);
+        if(errors.isEmpty()){
+
+        } else{
+            return res.render("login" , {errors:errors.errors})
+        }
+    }
+    ,
     login: (req, res)=>{
         let user_email = req.body.email;
         const user = Users.findByEmail(user_email);
