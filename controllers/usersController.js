@@ -22,7 +22,7 @@ const controller = {
     },
     store: (req, res)   => {
         let errors = validationResult(req);
-        res.send(errors);
+        if(errors.isEmpty()){
         if(req.file) {let users_copy = Users.getAll().map(product => product);
             let UserId = uuidv4();
             user.image = req.file.filename
@@ -43,19 +43,15 @@ const controller = {
         }
         
        
-    },
+    }else{
+        res.render('register' , {errors:errors.array()});
+    }
+},
     showLogin: (req, res)=>{
         res.render('login');
     },
-    processLogin:(req, res)=>{
-        let errors = validationResult(req);
-        if(errors.isEmpty()){
-
-        } else{
-            return res.render("login" , {errors:errors.errors})
-        }
-    }
-    ,
+    
+    
     login: (req, res)=>{
         let user_email = req.body.email;
         const user = Users.findByEmail(user_email);

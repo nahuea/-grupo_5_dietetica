@@ -39,11 +39,11 @@ router.post('/register/', upload.single("imagen-de-usuario"), usersController.st
 
 
 router.get('/login/',  usersController.showLogin);
-router.post('/login/' , usersController.login);
-router.post('/processLogin/', [
+router.post('/login/'  , [
     check("email").isEmail(), 
     check("password").isLength({min:9}).withMessage("la contraseña debe tener al menos 9 caracteres")
-] , usersController.processLogin);
+],  usersController.login);
+
 
 
 router.get('/profile',  usersController.show);
