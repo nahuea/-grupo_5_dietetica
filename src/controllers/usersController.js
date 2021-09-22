@@ -17,8 +17,14 @@ const controller = {
             user: user,
         })
     },
-    create: (req, res) => {
-        res.render('register');
+    processRegister: (req, res) => {
+        const resultValidation = validationResult(req);
+        if(resultValidation.errors.length > 0){
+            return res.render("userRegisterForm" , {
+                errors: resultValidation.mapped(),
+                oldData: req.body
+            });
+        }
     },
     store: (req, res)   => {
         let errors = validationResult(req);
