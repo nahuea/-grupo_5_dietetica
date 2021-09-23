@@ -2,6 +2,7 @@ const {validationResult} = require("express-validator");
 const Users = require('../models/users.js');
 const { v4: uuidv4 } = require('uuid');
 const bcryptjs = require('bcryptjs');
+const user = require("../database/models/users.js");
 
 
 const controller = {
@@ -9,6 +10,9 @@ const controller = {
     index: (req, res) => {
         const users_copy = Users.getAll()
         res.render('users', {'users': users_copy});
+    },
+    register: (req,res) =>{
+        return res.render("userRegisterForm")
     },
     show: (req, res) =>{
         let userId = req.session.userId;
@@ -25,6 +29,28 @@ const controller = {
                 oldData: req.body
             });
         }
+
+        let userInDB = user.findByEmail("email", req.body.email)
+
+        if(userInDB){
+            return res.render("userRegisterForm" , {
+                errors: {
+                    email:{
+                        msg:"el email que ingreso ya esta registrado"
+                    }
+                },
+                oldData: req.body
+            });
+        }
+        return res.send(userInDB);
+
+        let userToCreate = {
+            ...req.body,
+            password:bcryptjs.hashSync(req.body.password,10),
+            avatar: req.file.filename
+        }
+        user.create(userToCreate);
+        return res.redirect("/user/login");
     },
     store: (req, res)   => {
         let errors = validationResult(req);
@@ -74,6 +100,14 @@ const controller = {
         }
 
 
+    },
+    profile: (req,res) =>{
+        return res.render("userProfie")
+    },
+    logout:(req,res) =>{
+        req.session.destroy();
+        res.redirect('/');
+)
     }
 
 
