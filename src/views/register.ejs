@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <title>Dietética Tafi</title>
+</head>
+<body>
+
+    <%- include ('./partials/header') %>
+
+
+    <main>
+        <section class="form-register">
+            <% if(locals.errors) {
+                 errors.forEach(error =>{ %>
+                    <p><% = error.msg %></p>
+                <% })
+            }
+            %>
+        <form action="registro" method="POST" 
+        enctype="multipart/form-data">
+            
+            <h4>Formulario Registro</h4>
+            <div>
+            <label for="usuario">nombre de usuario</label>
+            <input class="control" type="text" name="nombre de usuario" id="usuario" placeholder="ej:HE-MAN83">
+            </div>
+
+            <div>
+                <label for="imagen-de-usuario">imagen de usuario</label>
+                <input class="control" type="file" name="imagen-de-usuario" id="imagen-de-usuario">
+                </div>
+
+
+            <div>
+            <label for="direccion">mail</label>
+            <input class="control" type="email" name="email" id="direccion" placeholder="ej:JuanPerez@mail.com">
+            </div>
+
+            
+            <div>
+            <label for="contraseña">contraseña</label>
+            <input class="control" type="password" name="contraseña" id="contraseña">
+            </div>
+
+            <div>
+            <label for="confirmar">confirmar contraseña</label>
+            <input class="control" type="password" name="confirmar contraseña">
+            </div>
+            <button class="boton" type="submit">Registrarse</button>
+           
+        </form>
+    </section>
+
+    </main>
+        
+
+
+    <%- include ('./partials/footer') %>
+
+    </body>
+</html>
