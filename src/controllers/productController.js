@@ -14,7 +14,6 @@ const controller = {
 			res.render('detail',{
 				product: product,
 			})
-
 	},
 
 	// Create - Form to create
